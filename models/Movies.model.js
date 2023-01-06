@@ -5,7 +5,7 @@ const movieSchema = new Schema(
     {
         title: {
             type: String,
-            required: false,
+            required: true,
             trim: true,
           },
         author: {
@@ -21,12 +21,12 @@ const movieSchema = new Schema(
           },
         description : {
             type: String,
-            required: false,
+            required: true,
             trim: true,
           },
         moviecreator : {
             type: String,
-            required: false,
+            required: true,
             trim: true,
           },
         rating: [Number],

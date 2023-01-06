@@ -3,7 +3,7 @@ const podcastSchema = new Schema (
     {
         title: {
             type: String,
-            required: false,
+            required: true,
             trim: true,
           },
         photo: {
@@ -12,22 +12,22 @@ const podcastSchema = new Schema (
           },
         description : {
             type: String,
-            required: false,
+            required: true,
             trim: true,
           },
-        numberofchapters:{
+        numberOfChapters:{
             type: Number,
-            required: false,
+            required: true,
             trim: true,
             },
-        averageduration: {
+        averageDuration: {
             type: Number,
-            required: false,
+            required: true,
             trim: true,
             },
         authors : {
             type: String,
-            required: false,
+            required: true,
             trim: true,
             },
         author: {

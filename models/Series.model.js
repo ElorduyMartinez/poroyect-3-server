@@ -3,7 +3,7 @@ const seriesSchema = new Schema (
     {
         title: {
             type: String,
-            required: false,
+            required: true,
             trim: true,
           },
          photo: {
@@ -12,22 +12,22 @@ const seriesSchema = new Schema (
           },
          description : {
             type: String,
-            required: false,
+            required: true,
             trim: true,
           },
-         seriecreator : {
+         serieCreator : {
             type: String,
-            required: false,
+            required: true,
             trim: true,
           },
-         numberofchapters:{
+         numberOfChapters:{
             type: Number,
-            required: false,
+            required: true,
             trim: true,
             },
-         numberofseason:{
+         numberOfSeason:{
             type: Number,
-            required: false,
+            required: true,
             trim: true,
             },
          author: {
