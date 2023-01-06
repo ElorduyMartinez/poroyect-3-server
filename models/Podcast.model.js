@@ -1,31 +1,31 @@
 const { Schema, model } = require("mongoose");
 const podcastSchema = new Schema (
     {
-        title: {
+        PodcastName: {
             type: String,
             required: true,
             trim: true,
           },
-        photo: {
+        PodcastImage: {
             type: String,
             default: "https://media.istockphoto.com/id/1357365823/vector/default-image-icon-vector-missing-picture-page-for-website-design-or-mobile-app-no-photo.jpg?s=612x612&w=0&k=20&c=PM_optEhHBTZkuJQLlCjLz-v3zzxp-1mpNQZsdjrbns="
           },
-        description : {
+        PodcastDescription : {
             type: String,
             required: true,
             trim: true,
           },
-        numberOfChapters:{
+        PodcastnumberOfChapters:{
             type: Number,
             required: true,
             trim: true,
             },
-        averageDuration: {
+        PodcastaverageDuration: {
             type: Number,
             required: true,
             trim: true,
             },
-        authors : {
+        Podcastauthors : {
             type: String,
             required: true,
             trim: true,
@@ -33,8 +33,6 @@ const podcastSchema = new Schema (
         author: {
             type: Schema.Types.ObjectId, ref: 'User',
             },
-        rating: [Number],
-        comments: [{type: Schema.Types.ObjectId, ref: 'Comment'}],
         
 
     }

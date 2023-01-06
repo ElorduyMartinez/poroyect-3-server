@@ -1,31 +1,31 @@
 const { Schema, model } = require("mongoose");
 const seriesSchema = new Schema (
     {
-        title: {
+        SerieName: {
             type: String,
             required: true,
             trim: true,
           },
-         photo: {
+         SerieImage: {
             type: String,
             default: "https://media.istockphoto.com/id/1357365823/vector/default-image-icon-vector-missing-picture-page-for-website-design-or-mobile-app-no-photo.jpg?s=612x612&w=0&k=20&c=PM_optEhHBTZkuJQLlCjLz-v3zzxp-1mpNQZsdjrbns="
           },
-         description : {
+         SerieDescription : {
             type: String,
             required: true,
             trim: true,
           },
-         serieCreator : {
+         SerieCreator : {
             type: String,
             required: true,
             trim: true,
           },
-         numberOfChapters:{
+         SerienumberOfChapters:{
             type: Number,
             required: true,
             trim: true,
             },
-         numberOfSeason:{
+         SerienumberOfSeason:{
             type: Number,
             required: true,
             trim: true,
@@ -34,9 +34,7 @@ const seriesSchema = new Schema (
             type: Schema.Types.ObjectId, ref: 'User',
             },
 
-        rating: [Number],
-         comments: [{type: Schema.Types.ObjectId, ref: 'Comment'}],
-
+        
     }
 )
 
